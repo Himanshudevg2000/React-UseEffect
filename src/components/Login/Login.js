@@ -17,7 +17,7 @@ const Login = (props) => {
     setEnteredEmail(event.target.value);
 
     setFormIsValid(
-      event.target.value.includes('@') && enteredPassword.trim().length > 6
+      event.target.value.includes('@') && enteredPassword.trim().length > 6 && enteredCollege.trim().length > 0
     );
   };
 
@@ -25,7 +25,7 @@ const Login = (props) => {
     setEnteredPassword(event.target.value);
 
     setFormIsValid(
-      event.target.value.trim().length > 6 && enteredEmail.includes('@')
+      event.target.value.trim().length > 6 && enteredEmail.includes('@') && enteredCollege.trim().length > 0 
     );
   };
 
